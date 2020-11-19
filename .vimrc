@@ -80,9 +80,14 @@ autocmd FileType html set omnifunc=htmlcomplete#CompleteTags	"html autocomplete
 iabbrev <// </<C-X><C-O>
 
 " Display tabs at the beginning of a line in Python mode as bad.
+<<<<<<< HEAD
 "highlight BadWhitespace ctermbg=red guibg=darkred
 "au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
 set list listchars=tab:»\ ,trail:°
+=======
+highlight BadWhitespace ctermbg=red guibg=darkred
+au BufRead,BufNewFile *.py,*.pyw match BadWhitespace /^\t\+/
+>>>>>>> 6d07b45eae37bd04edfda2811ccb8b061b532c02
 
 "Flagging unnecessary Whitespace
 highlight BadWhitespace ctermbg=red guibg=darkred
@@ -132,6 +137,7 @@ set incsearch
 set encoding=utf-8
 let python_highlight_all=1
 set clipboard=unnamed
+<<<<<<< HEAD
 "air-line settings
 let g:airline_powerline_fonts=1
 let g:airline_theme='bubblegum'
@@ -141,6 +147,10 @@ autocmd BufNewFile,BufEnter * silent! lcd %:p:h
 "80 characters limit column
 set colorcolumn=80
 highlight ColorColumn ctermbg=0 guibg=red
+=======
+set laststatus=2    "Shows the vim-airline
+
+>>>>>>> 6d07b45eae37bd04edfda2811ccb8b061b532c02
 
 "-- Python settings--
 "Run Python in VIM
